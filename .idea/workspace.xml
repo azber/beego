@@ -2,191 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fba90e-c19d-463e-8266-5c486fb1e9db" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/accesslog.go" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gosimpleignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/admin.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/admin_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/adminui.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/beego.go" afterPath="$PROJECT_DIR$/beego.go" />
-      <change beforePath="$PROJECT_DIR$/cache/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/cache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/cache_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/conv.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/conv_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/memcache/memcache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/memcache/memcache_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/memory.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/redis/redis.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/redis/redis_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/ssdb/ssdb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cache/ssdb/ssdb_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config.go" afterPath="$PROJECT_DIR$/config.go" />
-      <change beforePath="$PROJECT_DIR$/config/env/env.go" afterPath="$PROJECT_DIR$/config/env/env.go" />
-      <change beforePath="$PROJECT_DIR$/config/yaml/yaml.go" afterPath="$PROJECT_DIR$/config/yaml/yaml.go" />
-      <change beforePath="$PROJECT_DIR$/config/yaml/yaml_test.go" afterPath="$PROJECT_DIR$/config/yaml/yaml_test.go" />
-      <change beforePath="$PROJECT_DIR$/config_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/acceptencoder.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/acceptencoder_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/context.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/context_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/input.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/input_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/output.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/param/conv.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/param/methodparams.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/param/options.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/param/parsers.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/param/parsers_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/renderer.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/context/response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controller_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/error.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/error_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/filter.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/filter_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/flash.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/flash_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/grace/conn.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/grace/grace.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/grace/listener.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/grace/server.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/hooks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/httplib/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/httplib/httplib.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/httplib/httplib_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/log.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/alils/alils.go" afterPath="$PROJECT_DIR$/logs/alils/alils.go" />
-      <change beforePath="$PROJECT_DIR$/logs/es/es.go" afterPath="$PROJECT_DIR$/logs/es/es.go" />
-      <change beforePath="$PROJECT_DIR$/logs/file.go" afterPath="$PROJECT_DIR$/logs/file.go" />
-      <change beforePath="$PROJECT_DIR$/logs/logger.go" afterPath="$PROJECT_DIR$/logs/logger.go" />
-      <change beforePath="$PROJECT_DIR$/logs/logger_test.go" afterPath="$PROJECT_DIR$/logs/logger_test.go" />
-      <change beforePath="$PROJECT_DIR$/migration/ddl.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migration/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/migration/migration.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mime.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/namespace.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/namespace_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/cmd.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/cmd_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_alias.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_oracle.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_postgres.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_sqlite.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_tables.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_tidb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/db_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_boot.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_fields.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_info_f.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_info_m.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/models_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_conds.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_log.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_object.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_querym2m.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_queryset.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_raw.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/orm_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/qb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/qb_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/qb_tidb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/types.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orm/utils_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/parser.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/apiauth/apiauth.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/apiauth/apiauth_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/auth/basic.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/authz/authz.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_model.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_policy.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cors/cors.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cors/cors_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/policy.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/router.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/router_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/couchbase/sess_couchbase.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/ledis/ledis_session.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/memcache/sess_memcache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/mysql/sess_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/postgres/sess_postgresql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/redis/sess_redis.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_cookie.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_cookie_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_mem.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_mem_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/sess_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/session.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/session/ssdb/sess_ssdb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/staticfile.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/staticfile_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/swagger/swagger.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/template.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/template_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templatefunc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templatefunc_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/testing/assertions.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/testing/client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/healthcheck.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/profile.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/profile_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/statistics.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/statistics_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/task.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/toolbox/task_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tree.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tree_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/caller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/caller_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/captcha.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/image.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/image_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/siprng.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/captcha/siprng_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/debug.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/debug_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/file_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/mail.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/mail_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/pagination/controller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/pagination/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/pagination/paginator.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/pagination/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/rand.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/rand_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/safemap_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/slice.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/slice_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/testdata/grepe.test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/util.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/util_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/validation.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/validation_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validation/validators.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -201,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/logs/alils/config.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -355,7 +171,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -620,7 +436,7 @@
     <entry file="file://$PROJECT_DIR$/logs/alils/config.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
