@@ -19,93 +19,28 @@ import (
 	"os"
 	"path/filepath"
 	"reflect"
-	"runtime"
 	"strings"
 
-	"github.com/astaxie/beego/config"
-	"github.com/astaxie/beego/context"
-	"github.com/astaxie/beego/logs"
-	"github.com/astaxie/beego/session"
-	"github.com/astaxie/beego/utils"
+	"github.com/azber/beego/config"
+	"github.com/azber/beego/logs"
+	"github.com/azber/beego/utils"
 )
 
 // Config is the main struct for BConfig
 type Config struct {
-	AppName             string //Application name
-	RunMode             string //Running Mode: dev | prod
-	RouterCaseSensitive bool
-	ServerName          string
-	RecoverPanic        bool
-	RecoverFunc         func(*context.Context)
-	CopyRequestBody     bool
-	EnableGzip          bool
-	MaxMemory           int64
-	EnableErrorsShow    bool
-	EnableErrorsRender  bool
-	Listen              Listen
-	WebConfig           WebConfig
-	Log                 LogConfig
-}
+	AppName    string //Application name
+	RunMode    string //Running Mode: dev | prod
+	ServerName string
 
-// Listen holds for http and https related config
-type Listen struct {
-	Graceful      bool // Graceful means use graceful module to start the server
-	ServerTimeOut int64
-	ListenTCP4    bool
-	EnableHTTP    bool
-	HTTPAddr      string
-	HTTPPort      int
-	EnableHTTPS   bool
-	HTTPSAddr     string
-	HTTPSPort     int
-	HTTPSCertFile string
-	HTTPSKeyFile  string
-	EnableAdmin   bool
-	AdminAddr     string
-	AdminPort     int
-	EnableFcgi    bool
-	EnableStdIo   bool // EnableStdIo works with EnableFcgi Use FCGI via standard I/O
-}
-
-// WebConfig holds web related config
-type WebConfig struct {
-	AutoRender             bool
-	EnableDocs             bool
-	FlashName              string
-	FlashSeparator         string
-	DirectoryIndex         bool
-	StaticDir              map[string]string
-	StaticExtensionsToGzip []string
-	TemplateLeft           string
-	TemplateRight          string
-	ViewsPath              string
-	EnableXSRF             bool
-	XSRFKey                string
-	XSRFExpire             int
-	Session                SessionConfig
-}
-
-// SessionConfig holds session related config
-type SessionConfig struct {
-	SessionOn                    bool
-	SessionProvider              string
-	SessionName                  string
-	SessionGCMaxLifetime         int64
-	SessionProviderConfig        string
-	SessionCookieLifeTime        int
-	SessionAutoSetCookie         bool
-	SessionDomain                string
-	SessionDisableHTTPOnly       bool // used to allow for cross domain cookies/javascript cookies.
-	SessionEnableSidInHTTPHeader bool //	enable store/get the sessionId into/from http headers
-	SessionNameInHTTPHeader      string
-	SessionEnableSidInURLQuery   bool //	enable get the sessionId from Url Query params
+	Log LogConfig
 }
 
 // LogConfig holds Log related config
 type LogConfig struct {
-	AccessLogs  bool
-	FileLineNum bool
-	Outputs     map[string]string // Store Adaptor : config
+	AccessLogs       bool
+	AccessLogsFormat string //access log format: JSON_FORMAT, APACHE_FORMAT or empty string
+	FileLineNum      bool
+	Outputs          map[string]string // Store Adaptor : config
 }
 
 var (
@@ -115,8 +50,6 @@ var (
 	AppConfig *beegoAppConfig
 	// AppPath is the absolute path to the app
 	AppPath string
-	// GlobalSessions is the instance for the session manager
-	GlobalSessions *session.Manager
 
 	// appConfigPath is the path to the config files
 	appConfigPath string
@@ -134,9 +67,13 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-	appConfigPath = filepath.Join(workPath, "conf", "app.conf")
+	var filename = "app.ini"
+	if os.Getenv("BEEGO_MODE") != "" {
+		filename = os.Getenv("BEEGO_MODE") + ".app.ini"
+	}
+	appConfigPath = filepath.Join(workPath, "conf", filename)
 	if !utils.FileExists(appConfigPath) {
-		appConfigPath = filepath.Join(AppPath, "conf", "app.conf")
+		appConfigPath = filepath.Join(AppPath, "conf", filename)
 		if !utils.FileExists(appConfigPath) {
 			AppConfig = &beegoAppConfig{innerConfig: config.NewFakeConfig()}
 			return
@@ -147,101 +84,17 @@ func init() {
 	}
 }
 
-func recoverPanic(ctx *context.Context) {
-	if err := recover(); err != nil {
-		if err == ErrAbort {
-			return
-		}
-		if !BConfig.RecoverPanic {
-			panic(err)
-		}
-		if BConfig.EnableErrorsShow {
-			if _, ok := ErrorMaps[fmt.Sprint(err)]; ok {
-				exception(fmt.Sprint(err), ctx)
-				return
-			}
-		}
-		var stack string
-		logs.Critical("the request url is ", ctx.Input.URL())
-		logs.Critical("Handler crashed with error", err)
-		for i := 1; ; i++ {
-			_, file, line, ok := runtime.Caller(i)
-			if !ok {
-				break
-			}
-			logs.Critical(fmt.Sprintf("%s:%d", file, line))
-			stack = stack + fmt.Sprintln(fmt.Sprintf("%s:%d", file, line))
-		}
-		if BConfig.RunMode == DEV && BConfig.EnableErrorsRender {
-			showErr(err, ctx, stack)
-		}
-	}
-}
-
 func newBConfig() *Config {
 	return &Config{
-		AppName:             "beego",
-		RunMode:             DEV,
-		RouterCaseSensitive: true,
-		ServerName:          "beegoServer:" + VERSION,
-		RecoverPanic:        true,
-		RecoverFunc:         recoverPanic,
-		CopyRequestBody:     false,
-		EnableGzip:          false,
-		MaxMemory:           1 << 26, //64MB
-		EnableErrorsShow:    true,
-		EnableErrorsRender:  true,
-		Listen: Listen{
-			Graceful:      false,
-			ServerTimeOut: 0,
-			ListenTCP4:    false,
-			EnableHTTP:    true,
-			HTTPAddr:      "",
-			HTTPPort:      8080,
-			EnableHTTPS:   false,
-			HTTPSAddr:     "",
-			HTTPSPort:     10443,
-			HTTPSCertFile: "",
-			HTTPSKeyFile:  "",
-			EnableAdmin:   false,
-			AdminAddr:     "",
-			AdminPort:     8088,
-			EnableFcgi:    false,
-			EnableStdIo:   false,
-		},
-		WebConfig: WebConfig{
-			AutoRender:             true,
-			EnableDocs:             false,
-			FlashName:              "BEEGO_FLASH",
-			FlashSeparator:         "BEEGOFLASH",
-			DirectoryIndex:         false,
-			StaticDir:              map[string]string{"/static": "static"},
-			StaticExtensionsToGzip: []string{".css", ".js"},
-			TemplateLeft:           "{{",
-			TemplateRight:          "}}",
-			ViewsPath:              "views",
-			EnableXSRF:             false,
-			XSRFKey:                "beegoxsrf",
-			XSRFExpire:             0,
-			Session: SessionConfig{
-				SessionOn:                    false,
-				SessionProvider:              "memory",
-				SessionName:                  "beegosessionID",
-				SessionGCMaxLifetime:         3600,
-				SessionProviderConfig:        "",
-				SessionDisableHTTPOnly:       false,
-				SessionCookieLifeTime:        0, //set cookie default is the browser life
-				SessionAutoSetCookie:         true,
-				SessionDomain:                "",
-				SessionEnableSidInHTTPHeader: false, //	enable store/get the sessionId into/from http headers
-				SessionNameInHTTPHeader:      "Beegosessionid",
-				SessionEnableSidInURLQuery:   false, //	enable get the sessionId from Url Query params
-			},
-		},
+		AppName:    "beego",
+		RunMode:    DEV,
+		ServerName: "beegoServer:" + VERSION,
+
 		Log: LogConfig{
-			AccessLogs:  false,
-			FileLineNum: true,
-			Outputs:     map[string]string{"console": ""},
+			AccessLogs:       false,
+			AccessLogsFormat: "APACHE_FORMAT",
+			FileLineNum:      true,
+			Outputs:          map[string]string{"console": ""},
 		},
 	}
 }
@@ -256,7 +109,7 @@ func parseConfig(appConfigPath string) (err error) {
 }
 
 func assignConfig(ac config.Configer) error {
-	for _, i := range []interface{}{BConfig, &BConfig.Listen, &BConfig.WebConfig, &BConfig.Log, &BConfig.WebConfig.Session} {
+	for _, i := range []interface{}{BConfig, &BConfig.Log} {
 		assignSingleConfig(i, ac)
 	}
 	// set the run mode first
@@ -264,36 +117,6 @@ func assignConfig(ac config.Configer) error {
 		BConfig.RunMode = envRunMode
 	} else if runMode := ac.String("RunMode"); runMode != "" {
 		BConfig.RunMode = runMode
-	}
-
-	if sd := ac.String("StaticDir"); sd != "" {
-		BConfig.WebConfig.StaticDir = map[string]string{}
-		sds := strings.Fields(sd)
-		for _, v := range sds {
-			if url2fsmap := strings.SplitN(v, ":", 2); len(url2fsmap) == 2 {
-				BConfig.WebConfig.StaticDir["/"+strings.Trim(url2fsmap[0], "/")] = url2fsmap[1]
-			} else {
-				BConfig.WebConfig.StaticDir["/"+strings.Trim(url2fsmap[0], "/")] = url2fsmap[0]
-			}
-		}
-	}
-
-	if sgz := ac.String("StaticExtensionsToGzip"); sgz != "" {
-		extensions := strings.Split(sgz, ",")
-		fileExts := []string{}
-		for _, ext := range extensions {
-			ext = strings.TrimSpace(ext)
-			if ext == "" {
-				continue
-			}
-			if !strings.HasPrefix(ext, ".") {
-				ext = "." + ext
-			}
-			fileExts = append(fileExts, ext)
-		}
-		if len(fileExts) > 0 {
-			BConfig.WebConfig.StaticExtensionsToGzip = fileExts
-		}
 	}
 
 	if lo := ac.String("LogOutputs"); lo != "" {

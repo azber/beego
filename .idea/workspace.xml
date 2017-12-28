@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7fba90e-c19d-463e-8266-5c486fb1e9db" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/accesslog.go" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gosimpleignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/adminui.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beego.go" afterPath="$PROJECT_DIR$/beego.go" />
+      <change beforePath="$PROJECT_DIR$/cache/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/cache.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/cache_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/conv.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/conv_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/file.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/memcache/memcache.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/memcache/memcache_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/memory.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/redis/redis.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/redis/redis_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/ssdb/ssdb.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cache/ssdb/ssdb_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config.go" afterPath="$PROJECT_DIR$/config.go" />
+      <change beforePath="$PROJECT_DIR$/config/env/env.go" afterPath="$PROJECT_DIR$/config/env/env.go" />
+      <change beforePath="$PROJECT_DIR$/config/yaml/yaml.go" afterPath="$PROJECT_DIR$/config/yaml/yaml.go" />
+      <change beforePath="$PROJECT_DIR$/config/yaml/yaml_test.go" afterPath="$PROJECT_DIR$/config/yaml/yaml_test.go" />
+      <change beforePath="$PROJECT_DIR$/config_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/acceptencoder.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/acceptencoder_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/context.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/context_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/input.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/input_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/output.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/param/conv.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/param/methodparams.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/param/options.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/param/parsers.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/param/parsers_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/renderer.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/context/response.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/controller.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/controller_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/doc.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/error.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/error_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/filter.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/filter_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/flash.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/flash_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/grace/conn.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/grace/grace.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/grace/listener.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/grace/server.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hooks.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/httplib/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/httplib/httplib.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/httplib/httplib_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/alils/alils.go" afterPath="$PROJECT_DIR$/logs/alils/alils.go" />
+      <change beforePath="$PROJECT_DIR$/logs/es/es.go" afterPath="$PROJECT_DIR$/logs/es/es.go" />
+      <change beforePath="$PROJECT_DIR$/logs/file.go" afterPath="$PROJECT_DIR$/logs/file.go" />
+      <change beforePath="$PROJECT_DIR$/logs/logger.go" afterPath="$PROJECT_DIR$/logs/logger.go" />
+      <change beforePath="$PROJECT_DIR$/logs/logger_test.go" afterPath="$PROJECT_DIR$/logs/logger_test.go" />
+      <change beforePath="$PROJECT_DIR$/migration/ddl.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/migration/doc.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/migration/migration.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mime.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/namespace.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/namespace_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/cmd.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/cmd_utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_alias.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_mysql.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_oracle.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_postgres.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_sqlite.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_tables.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_tidb.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/db_utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_boot.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_fields.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_info_f.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_info_m.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/models_utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_conds.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_log.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_object.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_querym2m.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_queryset.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_raw.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/orm_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/qb.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/qb_mysql.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/qb_tidb.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/types.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/orm/utils_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/parser.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/apiauth/apiauth.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/apiauth/apiauth_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/auth/basic.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/authz/authz.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_model.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_policy.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/authz/authz_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/cors/cors.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/plugins/cors/cors_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/policy.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/router.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/router_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/couchbase/sess_couchbase.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/ledis/ledis_session.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/memcache/sess_memcache.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/mysql/sess_mysql.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/postgres/sess_postgresql.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/redis/sess_redis.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_cookie.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_cookie_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_file.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_mem.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_mem_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/sess_utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/session.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/session/ssdb/sess_ssdb.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/staticfile.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/staticfile_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/swagger/swagger.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/template.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/template_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templatefunc.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templatefunc_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/testing/assertions.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/testing/client.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/healthcheck.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/profile.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/profile_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/statistics.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/statistics_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/task.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/toolbox/task_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tree.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tree_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/caller.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/caller_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/captcha.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/image.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/image_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/siprng.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/captcha/siprng_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/debug.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/debug_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/file_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/mail.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/mail_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/pagination/controller.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/pagination/doc.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/pagination/paginator.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/pagination/utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/rand.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/rand_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/safemap_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/slice.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/slice_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/testdata/grepe.test" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/util.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/util_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/validation.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/validation_test.go" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/validation/validators.go" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="config.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logs/alils/config.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="es.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/es/es.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="machine_group.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/alils/machine_group.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+              <folding>
+                <element signature="e#15#95#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>NewFakeConfig</find>
+      <find>app.conf</find>
+      <find>session</find>
+      <find>gith</find>
+      <find>github.com/gogo/protobuf/proto</find>
+      <find>proto</find>
+      <find>protobuf/proto</find>
+      <find>git.</find>
+      <find>&quot;github</find>
+      <find>github.com/astaxie</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>app.ini</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/env/env.go" />
+        <option value="$PROJECT_DIR$/config/yaml/yaml.go" />
+        <option value="$PROJECT_DIR$/beego.go" />
+        <option value="$PROJECT_DIR$/config.go" />
+        <option value="$PROJECT_DIR$/logs/alils/log.pb.go" />
+        <option value="$PROJECT_DIR$/logs/alils/log_store.go" />
+        <option value="$PROJECT_DIR$/logs/es/es.go" />
+        <option value="$PROJECT_DIR$/logs/alils/alils.go" />
+        <option value="$PROJECT_DIR$/config/yaml/yaml_test.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="426" />
+    <option name="y" value="213" />
+    <option name="width" value="1588" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="beego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beego" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="23" width="2560" height="1359" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25178713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/ini.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#629#750#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../astaxie/beego/utils/safemap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/fake.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/safemap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/yaml/yaml.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/env.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#729#796#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1874">
+          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="e#1634#1676#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/ini.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="e#629#750#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/ini_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/color_windows.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/color.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#647#658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beego.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#628#787#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/json_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/machine_group.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding>
+            <element signature="e#15#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/log_project.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="e#194#274#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/es/es.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/xml/xml.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#968#1120#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/yaml/yaml_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="e#627#695#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/alils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/log_store.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/log_config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/log.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="43" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+          <folding>
+            <element signature="e#15#146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/alils/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
